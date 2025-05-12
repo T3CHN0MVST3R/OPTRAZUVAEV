@@ -1,0 +1,95 @@
+2025-05-12 23:09:06.539 [main] INFO  otp.main.Application - Запуск приложения OTP-сервиса denzomaster...
+2025-05-12 23:09:06.543 [main] INFO  otp.main.Application - Инициализация конфигурации OTP по умолчанию
+2025-05-12 23:09:07.113 [main] ERROR otp.dao.impl.OtpConfigDaoImpl - Ошибка загрузки конфигурации OTP: FATAL: password authentication failed for user "postgres"
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at otp.config.DatabaseManager.getConnection(DatabaseManager.java:46)
+	at otp.dao.impl.OtpConfigDaoImpl.getConfig(OtpConfigDaoImpl.java:27)
+	at otp.dao.impl.OtpConfigDaoImpl.initDefaultConfigIfEmpty(OtpConfigDaoImpl.java:67)
+	at otp.main.Application.initDatabase(Application.java:73)
+	at otp.main.Application.main(Application.java:41)
+2025-05-12 23:09:07.131 [main] ERROR otp.main.Application - Ошибка инициализации БД
+java.lang.RuntimeException: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at otp.dao.impl.OtpConfigDaoImpl.getConfig(OtpConfigDaoImpl.java:41)
+	at otp.dao.impl.OtpConfigDaoImpl.initDefaultConfigIfEmpty(OtpConfigDaoImpl.java:67)
+	at otp.main.Application.initDatabase(Application.java:73)
+	at otp.main.Application.main(Application.java:41)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at otp.config.DatabaseManager.getConnection(DatabaseManager.java:46)
+	at otp.dao.impl.OtpConfigDaoImpl.getConfig(OtpConfigDaoImpl.java:27)
+	... 3 common frames omitted
+2025-05-12 23:13:36.805 [main] INFO  otp.main.Application - Запуск приложения OTP-сервиса denzomaster...
+2025-05-12 23:13:36.808 [main] INFO  otp.main.Application - Инициализация конфигурации OTP по умолчанию
+2025-05-12 23:13:37.114 [main] ERROR otp.dao.impl.OtpConfigDaoImpl - Ошибка загрузки конфигурации OTP: FATAL: password authentication failed for user "postgres"
+org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at otp.config.DatabaseManager.getConnection(DatabaseManager.java:46)
+	at otp.dao.impl.OtpConfigDaoImpl.getConfig(OtpConfigDaoImpl.java:27)
+	at otp.dao.impl.OtpConfigDaoImpl.initDefaultConfigIfEmpty(OtpConfigDaoImpl.java:67)
+	at otp.main.Application.initDatabase(Application.java:73)
+	at otp.main.Application.main(Application.java:41)
+2025-05-12 23:13:37.117 [main] ERROR otp.main.Application - Ошибка инициализации БД
+java.lang.RuntimeException: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at otp.dao.impl.OtpConfigDaoImpl.getConfig(OtpConfigDaoImpl.java:41)
+	at otp.dao.impl.OtpConfigDaoImpl.initDefaultConfigIfEmpty(OtpConfigDaoImpl.java:67)
+	at otp.main.Application.initDatabase(Application.java:73)
+	at otp.main.Application.main(Application.java:41)
+Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
+	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:693)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:203)
+	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:258)
+	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:54)
+	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:263)
+	at org.postgresql.Driver.makeConnection(Driver.java:443)
+	at org.postgresql.Driver.connect(Driver.java:297)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:681)
+	at java.sql/java.sql.DriverManager.getConnection(DriverManager.java:229)
+	at otp.config.DatabaseManager.getConnection(DatabaseManager.java:46)
+	at otp.dao.impl.OtpConfigDaoImpl.getConfig(OtpConfigDaoImpl.java:27)
+	... 3 common frames omitted
+2025-05-12 23:15:09.920 [main] INFO  otp.main.Application - Запуск приложения OTP-сервиса denzomaster...
+2025-05-12 23:15:09.922 [main] INFO  otp.main.Application - Инициализация конфигурации OTP по умолчанию
+2025-05-12 23:15:10.203 [main] WARN  otp.dao.impl.OtpConfigDaoImpl - Конфигурация OTP не найдена в базе данных
+2025-05-12 23:15:10.251 [main] INFO  otp.dao.impl.OtpConfigDaoImpl - Инициализирована конфигурация OTP по умолчанию id=1 (length=6, ttlSeconds=300)
+2025-05-12 23:15:10.254 [main] INFO  otp.main.Application - Инициализация БД завершена успешно
+2025-05-12 23:15:10.258 [main] INFO  otp.service.OtpExpirationScheduler - Запуск планировщика истечения OTP, интервал=5 мин
+2025-05-12 23:15:10.260 [main] INFO  otp.main.Application - Планировщик проверки просроченных OTP-кодов запущен
+2025-05-12 23:15:10.274 [main] INFO  otp.api.Dispatcher - Регистрация маршрутов приложения
+2025-05-12 23:15:10.276 [main] INFO  otp.api.Dispatcher - Зарегистрирован публичный маршрут: POST /register
+2025-05-12 23:15:10.277 [main] INFO  otp.api.Dispatcher - Зарегистрирован публичный маршрут: POST /login
+2025-05-12 23:15:10.279 [main] INFO  otp.api.Dispatcher - Зарегистрирован защищенный маршрут: POST /otp/generate (роль: USER)
+2025-05-12 23:15:10.280 [main] INFO  otp.api.Dispatcher - Зарегистрирован защищенный маршрут: POST /otp/validate (роль: USER)
+2025-05-12 23:15:10.281 [main] INFO  otp.api.Dispatcher - Зарегистрирован защищенный маршрут: PATCH /admin/config (роль: ADMIN)
+2025-05-12 23:15:10.282 [main] INFO  otp.api.Dispatcher - Зарегистрированы защищенные маршруты: GET/DELETE /admin/users (роль: ADMIN)
+2025-05-12 23:15:10.283 [main] INFO  otp.api.Dispatcher - Все маршруты успешно зарегистрированы
+2025-05-12 23:15:10.284 [main] INFO  otp.main.Application - Сервер запущен на http://localhost:8080
+2025-05-12 23:15:10.290 [pool-1-thread-1] INFO  otp.dao.impl.OtpConfigDaoImpl - Загружена конфигурация OTP: OtpConfig{id=1, length=6, ttlSeconds=300}
+2025-05-12 23:15:10.322 [pool-1-thread-1] INFO  otp.dao.impl.OtpCodeDaoImpl - Помечено 0 OTP кодов как EXPIRED старше чем 2025-05-12T23:10:10.295129099
+2025-05-12 23:15:10.324 [pool-1-thread-1] INFO  otp.service.OtpService - markExpiredOtps: просроченные коды старше 300 секунд помечены
+2025-05-12 23:16:41.768 [Thread-0] INFO  otp.main.Application - Остановка планировщика...
+2025-05-12 23:16:41.769 [Thread-0] INFO  otp.service.OtpExpirationScheduler - Остановка планировщика истечения OTP

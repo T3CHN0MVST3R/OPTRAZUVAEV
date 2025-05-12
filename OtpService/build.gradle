@@ -1,0 +1,50 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group = 'com.denzomaster'
+version = '1.0-SNAPSHOT'
+sourceCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    // Database
+    implementation 'org.postgresql:postgresql:42.6.0'
+
+    // Logging
+    implementation 'org.slf4j:slf4j-api:2.0.9'
+    implementation 'ch.qos.logback:logback-classic:1.4.11'
+
+    // JSON processing
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+
+    // JWT for authentication
+    implementation 'com.auth0:java-jwt:4.4.0'
+
+    // Email
+    implementation 'com.sun.mail:javax.mail:1.6.2'
+
+    // HTTP server - comes with JDK
+
+    // SMPP for SMS (placeholder - you'll need to find an appropriate library)
+    implementation 'org.jsmpp:jsmpp:2.3.11'
+
+    // HTTP client for Telegram API
+    implementation 'org.apache.httpcomponents:httpclient:4.5.14'
+
+    // Test dependencies
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.10.0'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.10.0'
+}
+
+application {
+    mainClass = 'otp.main.Application'
+}
+
+test {
+    useJUnitPlatform()
+}
